@@ -1,0 +1,58 @@
+{
+  "name": "@kykungz/vercel-env",
+  "description": "Set Vercel environment variables with env file",
+  "version": "1.0.0",
+  "author": "Kongpon Charanwattanakit <jackykongpon@gmail.com>",
+  "bin": {
+    "vercel-env": "./bin/run"
+  },
+  "bugs": "https://github.com/kykungz/vercel-env/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "chalk": "^4.1.0",
+    "lodash": "^4.17.20",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/lodash": "^4.14.159",
+    "@types/node": "^10",
+    "globby": "^10",
+    "np": "^6.4.0",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/kykungz/vercel-env",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "vercel-env",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "kykungz/vercel-env",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "release": "yarn pack && np",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
