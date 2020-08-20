@@ -7,6 +7,10 @@
     "vercel-env": "./bin/run"
   },
   "bugs": "https://github.com/kykungz/vercel-env/issues",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
