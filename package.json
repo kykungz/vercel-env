@@ -16,12 +16,10 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
     "chalk": "^4.1.0",
-    "lodash": "^4.17.20",
     "tslib": "^1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
-    "@types/lodash": "^4.14.159",
     "@types/node": "^10",
     "globby": "^10",
     "np": "^6.4.0",
