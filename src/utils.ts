@@ -16,14 +16,18 @@ export const getEnvPairs = (content: string) => {
   })
 }
 
-export const updateEnv = (key: string, value: string | number) => {
+export const updateEnv = (
+  target: 'production' | 'preview' = 'preview',
+  key: string,
+  value: string | number,
+) => {
   spawnSync(
     [
       `echo "Removing ${chalk.cyan(key)}"`,
-      `echo 'Y' | vercel env rm ${key} production`,
+      `echo 'Y' | vercel env rm ${key} ${target}`,
       `echo ""`,
       `echo "Adding ${chalk.cyan(key)}"`,
-      `echo ${value} | vercel env add ${key} production`,
+      `echo ${value} | vercel env add ${key} ${target}`,
       `echo ""`,
     ].join(';'),
     { shell: true, stdio: 'inherit' },

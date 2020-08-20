@@ -17,6 +17,6 @@ export default class Production extends Command {
     const { args } = this.parse(Production)
     const content = fs.readFileSync(args.file).toString()
     const envPairs = getEnvPairs(content)
-    envPairs.forEach(({ key, value }) => updateEnv(key, value))
+    envPairs.forEach(({ key, value }) => updateEnv('production', key, value))
   }
 }
