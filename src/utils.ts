@@ -26,7 +26,7 @@ export const updateEnv = (
       `echo 'Y' | vercel env rm ${key} ${target}`,
       `echo ""`,
       `echo "Adding ${chalk.cyan(key)} of ${chalk.yellow(value)}"`,
-      `echo ${value} | vercel env add ${key} ${target}`,
+      `printf ${value} | vercel env add ${key} ${target}`,
       `echo ""`,
     ].join(';'),
     { shell: true, stdio: 'inherit' },
