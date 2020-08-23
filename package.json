@@ -1,7 +1,7 @@
 {
   "name": "@kykungz/vercel-env",
   "description": "Set Vercel environment variables with env file",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Kongpon Charanwattanakit <jackykongpon@gmail.com>",
   "bin": {
     "vercel-env": "./bin/run"
