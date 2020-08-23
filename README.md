@@ -19,7 +19,7 @@ $ npm install -g @kykungz/vercel-env
 $ vercel-env COMMAND
 running command...
 $ vercel-env (-v|--version|version)
-@kykungz/vercel-env/1.0.4 darwin-x64 node-v10.20.1
+@kykungz/vercel-env/1.0.5 darwin-x64 node-v10.20.1
 $ vercel-env --help [COMMAND]
 USAGE
   $ vercel-env COMMAND
@@ -48,7 +48,7 @@ EXAMPLE
   $ vercel-env development ./.env.development
 ```
 
-_See code: [src/commands/development.ts](https://github.com/kykungz/vercel-env/blob/v1.0.4/src/commands/development.ts)_
+_See code: [src/commands/development.ts](https://github.com/kykungz/vercel-env/blob/v1.0.5/src/commands/development.ts)_
 
 ## `vercel-env help [COMMAND]`
 
@@ -82,7 +82,7 @@ EXAMPLE
   $ vercel-env preview ./.env.preview
 ```
 
-_See code: [src/commands/preview.ts](https://github.com/kykungz/vercel-env/blob/v1.0.4/src/commands/preview.ts)_
+_See code: [src/commands/preview.ts](https://github.com/kykungz/vercel-env/blob/v1.0.5/src/commands/preview.ts)_
 
 ## `vercel-env production [FILE]`
 
@@ -99,5 +99,5 @@ EXAMPLE
   $ vercel-env production ./.env.production
 ```
 
-_See code: [src/commands/production.ts](https://github.com/kykungz/vercel-env/blob/v1.0.4/src/commands/production.ts)_
+_See code: [src/commands/production.ts](https://github.com/kykungz/vercel-env/blob/v1.0.5/src/commands/production.ts)_
 <!-- commandsstop -->
