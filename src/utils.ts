@@ -10,7 +10,7 @@ export const getEnvPairs = (content: string) => {
     .map((line) => {
       const separator = line!.indexOf('=')
       const key = line!.substring(0, separator)
-      const value = line!.substring(separator + 1)
+      const value = line!.substring(separator + 1).trim()
       return { key, value }
     })
 }
