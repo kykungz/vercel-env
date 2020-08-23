@@ -28,9 +28,27 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`vercel-env development [FILE]`](#vercel-env-development-file)
 * [`vercel-env help [COMMAND]`](#vercel-env-help-command)
 * [`vercel-env preview [FILE]`](#vercel-env-preview-file)
 * [`vercel-env production [FILE]`](#vercel-env-production-file)
+
+## `vercel-env development [FILE]`
+
+Deploy environment variables to Development environment
+
+```
+USAGE
+  $ vercel-env development [FILE]
+
+OPTIONS
+  -h, --help  show CLI help
+
+EXAMPLE
+  $ vercel-env development ./.env.development
+```
+
+_See code: [src/commands/development.ts](https://github.com/kykungz/vercel-env/blob/v1.0.4/src/commands/development.ts)_
 
 ## `vercel-env help [COMMAND]`
 

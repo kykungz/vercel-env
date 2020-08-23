@@ -16,7 +16,7 @@ export const getEnvPairs = (content: string) => {
 }
 
 export const updateEnv = (
-  target: 'production' | 'preview' = 'preview',
+  target: 'production' | 'preview' | 'development' = 'preview',
   key: string,
   value: string | number,
 ) => {
@@ -25,7 +25,7 @@ export const updateEnv = (
       `echo "Removing ${chalk.cyan(key)}"`,
       `echo 'Y' | vercel env rm ${key} ${target}`,
       `echo ""`,
-      `echo "Adding ${chalk.cyan(key)}"`,
+      `echo "Adding ${chalk.cyan(key)} of ${chalk.yellow(value)}"`,
       `echo ${value} | vercel env add ${key} ${target}`,
       `echo ""`,
     ].join(';'),
